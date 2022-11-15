@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0; 
+	height: 100vh;
+	font-family: roboto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input, textarea, button {
+	font-family: inherit;
+}
+
+.container {
+	width: 400px;
+	height: 530px;
+	padding: 25px;
+	background-color: #f3f4f7;
+	border-radius: 10px;
+	box-shadow: 0 0 25px rgba(83, 87, 95, 0.25);
+}
+
+h1 {
+	padding: 20px 0;
+	color: #090909;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+}
+.text-field {
+	width: 100%;
+	height: 230px;
+	margin: 20px 0;
+	padding: 10px;
+	background: transparent;
+	border: 1px solid #52565e;
+	font-size: 16px;
+	font-weight: normal;
+	outline: none;
+	resize: none;
+}
+.copy-btn {
+	padding: 10px 15px;
+	background-color: #037ef3;
+	color: #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: capitalize;
+	border: none;
+	cursor: pointer;
+}
+
+.copy-btn i {
+	padding-left: 10px;
+
+}
+
+.copy-btn i:active{
+	transform: scale(0.92);
+}
+
+span.copied {
+	display: block;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 26px;
+	color: #858585;
+	transform: scale(0);
+	transition: all 0.5s;
+}
+
+
+span.bounce-effect {
+	animation: bounce-in .8s linear;
+}
+
+
+/* Bouncing Animation */
+
+@keyframes bounce-in {
+	0% {
+		opacity: 0;
+		transform: scale(1.1);
+	}
+	20% {
+		transform: scale(0.9);
+	}
+	40% {
+		transform: scale(0.3);
+	}
+	60% {
+		opacity: 1;
+		transform: scale(1.3);
+	}
+	80% {
+		transform: scale(0.97);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
